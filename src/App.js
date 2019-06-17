@@ -69,7 +69,7 @@ class App extends Component {
       "Uint8Array(32) [\n  244  26   255  176  8    247  14   221  \n  177  109  132  138  87   167  124  13   \n  188  168  98   140  240  126  188  214\n  58   101  86   158  217  193  132  253 \n]";
 
     return (
-      <Deck presenterNotes>
+      <Deck navigation>
         <Slide style={{ background: "#99c794", color: "#fff" }}>
           <Video src={fireworks} loop autoplay full color="#99c794" />
           <Title style={{ color: "#ffffff", position: "relative", zIndex: 1 }}>
