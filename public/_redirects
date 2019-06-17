@@ -1,5 +1,5 @@
 # Redirect sambego.be to sambeg.tech
-https://1990.sambego.be/* https://1990.sambego.tech/:splat 301!
+https://webauthn.sambego.be/* https://webauthn.sambego.tech/:splat 301!
 
 # Suport the history API
 /* /index.html 200

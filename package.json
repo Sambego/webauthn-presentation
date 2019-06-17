@@ -1,9 +1,9 @@
 {
-  "name": "1990",
+  "name": "webauthn",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sambego/diorama": "^1.0.6",
+    "@sambego/diorama": "^1.1.1",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
