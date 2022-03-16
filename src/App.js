@@ -99,7 +99,7 @@ class App extends Component {
     
     return (
       // <Deck navigation footer={footer}>
-      <Deck footer={footer} >
+      <Deck footer={footer} presenterNotes>
       {/* <Deck footer={footer} > */}
         <Slide style={{ background: "#6699CC", color: "#fff" }}>
           <Video
@@ -192,6 +192,9 @@ class App extends Component {
           <Subtitle><Highlight style={{background: "#6699CC"}}>Key based</Highlight> authentication</Subtitle>
         </Slide>
         <Slide>
+          <Subtitle>Requires a <Highlight style={{background: "#6699CC"}}>user interaction</Highlight></Subtitle>
+        </Slide>
+        <Slide>
           <Subtitle><Highlight style={{background: "#6699CC"}}>Hardware</Highlight> authenticator</Subtitle>
         </Slide>
         <Slide>
@@ -216,9 +219,6 @@ class App extends Component {
 
         <Slide style={{ background: "#6699CC"}}>
           <Title>WebAuth-<Highlight style={{background: "#ffffff"}}>why</Highlight>?</Title>
-        </Slide>
-        <Slide>
-          <Subtitle><Highlight style={{background: "#6699CC"}}>Web Authentication</Highlight> API</Subtitle>
         </Slide>
         <Slide>
           <AnnoyingForm />
@@ -315,6 +315,7 @@ class App extends Component {
             <a
               href="https://www.iana.org/assignments/cose/cose.xhtml#algorithms"
               target="_blank"
+              style={{ color: "#000", borderColor: "#6699CC" }}
             >
               https://www.iana.org/assignments/cose/cose.xhtml#algorithms
             </a>
@@ -358,9 +359,11 @@ class App extends Component {
         <Slide>
           <Code code={createBackend1} />
         </Slide>
+        <Slide><Subtitle>The Client Data JSON Object is a <Highlight style={{background: "#6699CC"}}>JSON string</Highlight> as an <Highlight style={{background: "#6699CC"}}>ArrayBuffer</Highlight></Subtitle></Slide>
         <Slide>
           <Code code={createBackend2} />
         </Slide>
+        <Slide notes="Concise Binary Object Representation"><Subtitle>The attestation Object is a <Highlight style={{background: "#6699CC"}}>CBOR encoded ArrayBuffer</Highlight></Subtitle></Slide>
         <Slide notes="attStmt: lets call it the signature, Flags contain more info like was the user preset, was the user verified">
           <Code code={createBackend3} />
         </Slide>
@@ -518,57 +521,39 @@ class App extends Component {
           </List>
         </Slide>
         <Slide>
-          <List>
-            <li>
-              <a href="https://webauthn.me" target="_blank" style={{ color: "#000", borderColor: "#6699CC" }}>
-                https://webauthn.me
-              </a>
-            </li>
-            <li>
-              <a href="https://www.w3.org/TR/webauthn" target="_blank" style={{ color: "#000", borderColor: "#6699CC" }}>
-                https://www.w3.org/TR/webauthn
-              </a>
-            </li>
-          </List>
+          <Subtitle>
+            <a href="https://webauthn.me" target="_blank" style={{ color: "#000", borderColor: "#6699CC" }}>
+              webauthn.me
+            </a>
+          </Subtitle>
         </Slide>
         <Slide>
-          <List>
-            <li>
-              <a href="https://auth0.com/blog" target="_blank" style={{ color: "#000", borderColor: "#6699CC" }}>
-                https://auth0.com/blog
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://auth0.com/blog/enhancing-webauthn-me-with-the-online-debugger-tool/"
-                target="_blank" style={{ color: "#000", borderColor: "#6699CC" }}
-              >
-                https://auth0.com/blog/enhancing-webauthn-me-with-the-online-debugger-tool/
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://auth0.com/blog/a-look-at-webauthn-resident-credentials/"
-                target="_blank" style={{ color: "#000", borderColor: "#6699CC" }}
-              >
-                https://auth0.com/blog/a-look-at-webauthn-resident-credentials/
-              </a>
-            </li>
-          </List>
+          <Subtitle>
+            <a href="https://www.w3.org/TR/webauthn" target="_blank" style={{ color: "#000", borderColor: "#6699CC"}}>
+              w3.org/TR/webauthn
+            </a>
+          </Subtitle>
         </Slide>
         <Slide>
-        <Subtitle>
+          <Subtitle>
+            <a href="https://auth0.com/blog" target="_blank" style={{ color: "#000", borderColor: "#6699CC" }}>
+              auth0.com/blog
+            </a>
+          </Subtitle>
+        </Slide>
+        <Slide>
+         <Subtitle>
             <a
               style={{ color: "#000", borderColor: "#6699CC" }}
-              href="https://webauthn.sambego.tech"
+              href="webauthn.sambego.tech"
             >
               webauthn.sambego.tech
             </a>
           </Subtitle>
         </Slide>
 
-        <Slide>
-          <Subtitle>Thanks!</Subtitle>
+        <Slide style={{ background: "#6699CC"}}>
+          <Subtitle style={{color: '#fff'}}>Thanks!</Subtitle>
         </Slide>
         <Slide>
           <Image
