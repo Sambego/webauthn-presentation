@@ -99,7 +99,7 @@ class App extends Component {
     
     return (
       // <Deck navigation footer={footer}>
-      <Deck footer={footer} presenterNotes>
+      <Deck footer={footer}>
       {/* <Deck footer={footer} > */}
         <Slide style={{ background: "#6699CC", color: "#fff" }}>
           <Video
